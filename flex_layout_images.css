@@ -1,0 +1,143 @@
+body{
+    background-image: url(./flex_images_bg.jpg);
+    color: white;
+
+    box-sizing: border-box;
+}
+
+
+.heading{
+    text-align: center;
+    text-decoration: dotted;
+}
+
+.container{
+    box-shadow: 0 0 10px white;
+    border-radius: 10px;
+    max-width: 90vw;
+
+    margin: auto;
+    margin-top: 4rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+    gap: 1rem;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.divds{
+    flex-basis: 300px;
+    min-height: 300px;
+
+    border: solid rgb(118, 11, 11);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px black;
+
+    border-radius: 10px;
+}
+
+
+#div1{
+    flex-grow: 1;
+
+    background-image: url(./flex_images_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#div2{
+    flex-shrink: 1;
+
+    background-image: url(./flex_images_2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#div3{
+    flex-shrink: 2;
+
+    background-image: url(./flex_images_3.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#div4{
+    flex-grow: 2;
+
+    background-image: url(./flex_images_4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#div5{
+    align-self: flex-start;
+    flex-basis: 500px;
+    flex-grow: 3;
+
+
+    background-image: url(./flex_images_5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width:320px) {
+    #div1{
+        background-image: url(./flex_images_5.jpg);
+    }
+
+    #div2{
+        background-image: url(./flex_images_4.jpg);
+    }
+
+    #div3{
+        background-image: url(./flex_images_3.webp);
+    }
+
+    #div4{
+        background-image: url(./flex_images_2.jpg);
+    }
+
+    #div5{
+        background-image: url(./flex_images_1.jpg);
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:720px) {
+    #div1{
+        background-image: url(./flex_images_1.jpg);
+    }
+
+    #div2{
+        background-image: url(./flex_images_2.jpg);
+    }
+
+    #div3{
+        background-image: url(./flex_images_3.webp);
+    }
+
+    #div4{
+        background-image: url(./flex_images_4.jpg);
+    }
+
+    #div5{
+        background-image: url(./flex_images_5.jpg);
+    }
+}
